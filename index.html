@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Textos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/img/logo.png" alt="logo_alura" onclick="trocarCor()">
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__formulario">
+            <textarea type="text" rows="10" id="apresentacao__formulario__input"> Digite seu texto aqui. </textarea>
+            <section class="apresentacao__formulario__botoes">
+                <img src="/assets/img/icone.svg">
+                <span>Apenas letras minúsculas e sem acento.</span>
+
+                <input type="button" class="apresentacao__formulario__cripto" value="Criptografar">
+                <input type="button" class="apresentacao__formulario__decripto" value="Descriptografar">
+            </section>
+        </section>
+        <section class="apresentacao__resultado">
+            <aside class="apresentacao__resultado__box">
+                <img src="assets/img/resultado.svg" alt="resultado" id="apresentacao__resultado__imagem">
+                <section  class="apresentacao__resultado__box__texto"> 
+                    <h1>Nenhuma mensagem encontrada</h1>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <input type="button" class="apresentacao__resultado_copiar" value="Copiar">
+                </section>
+                
+            </aside>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
