@@ -1,5 +1,6 @@
 :root{
     --bg-cor-primario: #F3F5FC;
+    --bg-cor-dark-primario: #000;
     --bg-cor-secundario: #0A3871;
     --bg-cor-terciario: #fff;
     --bg-cor-botao-primario: #0A3871;
@@ -9,13 +10,26 @@
     --txt-cor-secundario: #fff;
     --txt-cor-terciario: #343A40;
 }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+.body-dark{
+    background-color: var(--bg-cor-dark-primario);
+    width: 1440px;
+    height: 1024px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 3rem;
+    font-weight: 400;
+    
+}
+
+.body-white {
     background-color: var(--bg-cor-primario);
     width: 1440px;
     height: 1024px;
@@ -27,8 +41,22 @@ body{
 }
 
 .cabecalho{
-    margin: 3.5em;
+    margin: 3rem;
+    display: flex;
+    height: 3rem;
+    align-content: center;
+    justify-content: space-around;
 }
+
+.cabecalho__trocar{
+    align-items: center;
+    border-radius: 1rem;
+    height: 4rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    color: var(--txt-cor-primario);
+}
+
 
 .apresentacao{
     display: flex;
@@ -57,35 +85,41 @@ body{
     color: var(--txt-cor-primario);
 }
 
-
-
 .apresentacao__formulario__botoes{
     display: flex;
     justify-content: space-evenly;
 }
 
-.apresentacao__formulario__botoes span{
+.apresentacao__formulario__botoes__citacao{
     position: absolute;
-    bottom: -85px;
+    bottom: -65px;
     left: 200px;
     font-size: .7rem;
     font-weight: 300;
     color: var(--txt-cor-terciario);
 }
 
-.apresentacao__formulario__botoes img{
+.apresentacao__formulario__botoes__citacao__dark{
     position: absolute;
-    bottom: -69px;
-    left: 180px;
-    
+    bottom: -65px;
+    left: 200px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--txt-cor-primario);
 }
+
+.apresentacao__formulario__botoes__icone{
+    position: absolute;
+    bottom: -49px;
+    left: 180px;
+}
+
 .apresentacao__formulario__botoes input[type=button]{
     align-items: center;
     border-radius: 1rem;
     height: 4rem;
     width: 40%;
     margin-bottom: 3rem;
-    
 }
 
 .apresentacao__formulario__cripto{

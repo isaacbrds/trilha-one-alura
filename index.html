@@ -8,16 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="body-white">
     <header class="cabecalho">
-        <img src="assets/img/logo.png" alt="logo_alura" onclick="trocarCor()">
+        <img src="assets/img/logo.png" alt="logo_alura">
+        <input type="button" class="cabecalho__trocar" value="Dark Mode">
+        
     </header>
     <main class="apresentacao">
         <section class="apresentacao__formulario">
             <textarea type="text" rows="10" id="apresentacao__formulario__input"> Digite seu texto aqui. </textarea>
             <section class="apresentacao__formulario__botoes">
-                <img src="/assets/img/icone.svg">
-                <span>Apenas letras minúsculas e sem acento.</span>
+                <img src="/assets/img/icone.svg" class="apresentacao__formulario__botoes__icone">
+                <span class="apresentacao__formulario__botoes__citacao">Apenas letras minúsculas e sem acento.</span>
 
                 <input type="button" class="apresentacao__formulario__cripto" value="Criptografar">
                 <input type="button" class="apresentacao__formulario__decripto" value="Descriptografar">

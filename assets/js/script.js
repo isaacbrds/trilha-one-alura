@@ -3,6 +3,7 @@ const botaoDesCriptografar = document.querySelector(".apresentacao__formulario__
 const botaoCopiar = document.querySelector(".apresentacao__resultado_copiar")
 const input = document.getElementById("apresentacao__formulario__input")
 const imagemResultado = document.getElementById("apresentacao__resultado__imagem")
+const botaoDarkMode = document.querySelector(".cabecalho__trocar");
 let section = document.querySelector(".apresentacao__resultado__box")
 
 function criptografar(){
@@ -60,7 +61,17 @@ function copiar(){
     input.value = resultadoBoxTexto.innerText
 }
 
+function ativarDarkMode(){
+    const body = document.querySelector(".body-white")
+    const citacao = document.querySelector(".apresentacao__formulario__botoes__citacao")
+    body.classList.remove( "body-white" )
+    body.classList.add( "body-dark" )
+    citacao.classList.remove("apresentacao__formulario__botoes__citacao")
+    citacao.classList.add("apresentacao__formulario__botoes__citacao__dark")
+}
+
 botaoCriptografar.addEventListener("click", criptografar)
 botaoCopiar.addEventListener("click", copiar)
 
+botaoDarkMode.addEventListener("click", ativarDarkMode)
 botaoDesCriptografar.addEventListener("click", descriptografar)
